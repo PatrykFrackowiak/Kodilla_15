@@ -15,7 +15,7 @@ Hero.propTypes = {
   };
 
 Hero.defaultProps = {
-    imageSrc: "src/assets/space.png"
+    imageSrc: 'src/assets/space.png'
 }
 
 export default Hero;
