@@ -8,6 +8,14 @@
     "build": "webpack --mode production",
     "lint": "eslint src/"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,14 +24,6 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-html-parser": "^2.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": "eslint"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
