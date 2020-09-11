@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
-import Creator from '../Creator/Creator';
-import { settings } from '../../data/dataStore';
+// import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
 
 class Column extends React.Component {
@@ -13,44 +12,27 @@ class Column extends React.Component {
     cards: PropTypes.array,
   };
 
-  state = {
-    cards: this.props.cards || [],
-  };
-
   render() {
+    const { title, icon, cards } = this.props;
     return (
       <div className={styles.component}>
         <h3 className={styles.title}>
-          {this.props.title}{' '}
+          {title}{' '}
           <span className={styles.icon}>
-            <Icon name={this.props.icon} />
+            <Icon name={icon} />
           </span>
         </h3>
         <div>
-          {this.state.cards.map(({ key, title }) => (
-            <Card key={key} title={title} />
+          {cards.map(({ id, title }) => (
+            <Card key={id} title={title} />
           ))}
-          <Creator
+          {/*  <Creator
             text={settings.cardCreatorText}
             action={(title) => this.addCard(title)}
-          />
+          /> */}
         </div>
       </div>
     );
-  }
-
-  addCard(title) {
-    this.setState((state) => ({
-      cards: [
-        ...state.cards,
-        {
-          key: state.cards.length
-            ? state.cards[state.cards.length - 1].key + 1
-            : 0,
-          title,
-        },
-      ],
-    }));
   }
 }
 
