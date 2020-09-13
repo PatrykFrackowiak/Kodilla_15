@@ -12,6 +12,17 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  homeIcon: 'cat',
+
+  infoPage: {
+    title: 'About me...',
+    imageSrc: 'https://images.pexels.com/photos/2453105/pexels-photo-2453105.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+  },
+  
+  faqPage: {
+    title: 'FAQ',
+    imageSrc: 'https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&h=750&w=1260',
+  },
 };
 
 export const pageContents = {

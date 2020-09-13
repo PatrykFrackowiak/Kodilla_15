@@ -12,7 +12,7 @@ class Column extends React.Component {
     icon: PropTypes.string.isRequired,
     cards: PropTypes.array,
     addCard: PropTypes.func,
-  };
+  };[[]]
 
   static defaultProps = {
     icon: settings.defaultColumnIcon,

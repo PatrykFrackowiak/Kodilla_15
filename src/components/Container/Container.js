@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 class Container extends React.Component {
   static propTypes = {
-    children: PropTypes.array,
+    children: PropTypes.node,
   };
 
   render() {
