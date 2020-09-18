@@ -16,12 +16,14 @@ export const settings = {
 
   infoPage: {
     title: 'About me...',
-    imageSrc: 'https://images.pexels.com/photos/2453105/pexels-photo-2453105.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+    imageSrc:
+      'https://images.pexels.com/photos/2453105/pexels-photo-2453105.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
   },
-  
+
   faqPage: {
     title: 'FAQ',
-    imageSrc: 'https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&h=750&w=1260',
+    imageSrc:
+      'https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?auto=compress&cs=tinysrgb&h=750&w=1260',
   },
 };
 
@@ -90,6 +92,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Shopping',
+    description: 'Things for dinner!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Remont',
+    description: 'Jak typowy Polak prowadzę remont w czasie wolnym!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
 ];
 
 const columns = [
@@ -153,7 +167,7 @@ const cards = [
 ];
 
 const initialStoreData = {
-  app: {...pageContents},
+  app: { ...pageContents },
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
